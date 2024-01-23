@@ -15,4 +15,4 @@ ENGINE_PARTITION_KEY "toYYYYMM(timestamp)"
 ENGINE_SORTING_KEY "timestamp"
 ENGINE_TTL "timestamp + toIntervalDay(60)"
 
-TAG "backfill_column=timestamp"
+TAGS "backfill_column=timestamp"
