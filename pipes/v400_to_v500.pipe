@@ -1,0 +1,11 @@
+NODE live_to_new
+DESCRIPTION >
+    Sync data from live to new
+
+SQL >
+    SELECT
+       *
+    FROM v4_0_0.analytics_events
+
+TYPE materialized
+DATASOURCE analytics_events
