@@ -1,4 +1,4 @@
-NODE new_to_live
+NODE live_to_new
 DESCRIPTION >
     Aggregate by session_id and calculate session metrics
 
