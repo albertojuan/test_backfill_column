@@ -8,12 +8,10 @@ SCHEMA >
     `session_id` String `json:$.session_id`,
     `action` LowCardinality(String) `json:$.action`,
     `version` LowCardinality(String) `json:$.version`,
-    `payload` String `json:$.payload`,
-    `new_column` Nullable(String) `json:$.new_column`
+    `new_column` Nullable(String) `json:$.new_column`,
+    `payload` String `json:$.payload`
 
 ENGINE "MergeTree"
 ENGINE_PARTITION_KEY "toYYYYMM(timestamp)"
 ENGINE_SORTING_KEY "timestamp"
 ENGINE_TTL "timestamp + toIntervalDay(60)"
-
-TAGS "backfill_column=timestamp"

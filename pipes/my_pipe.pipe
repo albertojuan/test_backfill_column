@@ -1,0 +1,6 @@
+NODE untitled_pipe_1817_0
+SQL >
+
+    SELECT * FROM analytics_sessions_mv
+
+
